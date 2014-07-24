@@ -8,11 +8,13 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class BarController;
+
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property IBOutlet NSMenu *statusMenu;
 @property (nonatomic, strong) NSStatusItem *statusBar;
-@property (assign) IBOutlet NSWindow *window;
+@property BarController *barController;
 
 
 @end

@@ -14,7 +14,6 @@
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
                 <outlet property="statusMenu" destination="Zng-Rx-wRL" id="vto-AU-wWF"/>
-                <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
@@ -667,19 +666,6 @@
                 </menuItem>
             </items>
         </menu>
-        <window title="bar" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
-            <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
-                <autoresizingMask key="autoresizingMask"/>
-            </view>
-            <connections>
-                <outlet property="delegate" destination="Voe-Tx-rLC" id="M6K-EC-emH"/>
-            </connections>
-        </window>
         <menu id="Zng-Rx-wRL">
             <items>
                 <menuItem title="Refresh" id="iFB-rn-qsc">

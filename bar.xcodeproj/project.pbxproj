@@ -18,6 +18,8 @@
 		61793D5819808CBA0028EF95 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61793D3719808CBA0028EF95 /* Cocoa.framework */; };
 		61793D6019808CBA0028EF95 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 61793D5E19808CBA0028EF95 /* InfoPlist.strings */; };
 		61793D6219808CBA0028EF95 /* barTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 61793D6119808CBA0028EF95 /* barTests.m */; };
+		61793D71198164960028EF95 /* Bar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61793D70198164960028EF95 /* Bar.xib */; };
+		61793D74198166D30028EF95 /* BarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61793D73198166D30028EF95 /* BarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,9 @@
 		61793D5D19808CBA0028EF95 /* barTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "barTests-Info.plist"; sourceTree = "<group>"; };
 		61793D5F19808CBA0028EF95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		61793D6119808CBA0028EF95 /* barTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = barTests.m; sourceTree = "<group>"; };
+		61793D70198164960028EF95 /* Bar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Bar.xib; sourceTree = "<group>"; };
+		61793D72198166D30028EF95 /* BarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarController.h; sourceTree = "<group>"; };
+		61793D73198166D30028EF95 /* BarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +120,11 @@
 		61793D3D19808CBA0028EF95 /* bar */ = {
 			isa = PBXGroup;
 			children = (
+				61793D70198164960028EF95 /* Bar.xib */,
 				61793D4919808CBA0028EF95 /* AppDelegate.h */,
 				61793D4A19808CBA0028EF95 /* AppDelegate.m */,
+				61793D72198166D30028EF95 /* BarController.h */,
+				61793D73198166D30028EF95 /* BarController.m */,
 				61793D4C19808CBA0028EF95 /* MainMenu.xib */,
 				61793D4F19808CBA0028EF95 /* Images.xcassets */,
 				61793D3E19808CBA0028EF95 /* Supporting Files */,
@@ -231,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				61793D4219808CBA0028EF95 /* InfoPlist.strings in Resources */,
+				61793D71198164960028EF95 /* Bar.xib in Resources */,
 				61793D5019808CBA0028EF95 /* Images.xcassets in Resources */,
 				61793D4819808CBA0028EF95 /* Credits.rtf in Resources */,
 				61793D4E19808CBA0028EF95 /* MainMenu.xib in Resources */,
@@ -254,6 +263,7 @@
 			files = (
 				61793D4B19808CBA0028EF95 /* AppDelegate.m in Sources */,
 				61793D4419808CBA0028EF95 /* main.m in Sources */,
+				61793D74198166D30028EF95 /* BarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
