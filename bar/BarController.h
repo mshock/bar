@@ -15,6 +15,7 @@
 @property (strong) IBOutlet NSWindow *barWindow;
 @property (weak) IBOutlet NSView *barView;
 @property ClockTimer *clockTimer;
+- (IBAction)textFieldAction:(id)sender;
 
 - (void) timerWriteText:(NSTimer*)theTimer;
 

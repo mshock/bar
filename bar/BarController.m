@@ -19,10 +19,14 @@
     [self.textField setStringValue:message];
 }
 
+
+- (IBAction)textFieldAction:(id)sender {
+}
 // method for timer selector
 - (void) timerWriteText:(NSTimer*)theTimer {
     NSString *message = [theTimer.userInfo message];
     [self.textField setStringValue:message];
+    NSLog(@"%@", message);
 }
 
 - (id)init
@@ -60,7 +64,7 @@
     self.clockTimer.barObject = self;
     
     self.clockTimer.updateTextSelector = @selector(timerWriteText:);
-    [self.clockTimer startRepeatingTimer:nil];
+    [self.clockTimer startRepeatingTimer:self];
 }
 
 @end

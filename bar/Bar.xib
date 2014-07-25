@@ -9,6 +9,7 @@
                 <outlet property="barView" destination="EiT-Mj-1SZ" id="cPe-Fd-nSz"/>
                 <outlet property="barWindow" destination="QvC-M9-y7g" id="6Ty-4c-lFV"/>
                 <outlet property="textField" destination="VTf-f3-3z5" id="dMK-at-Ijk"/>
+                <outlet property="textFieldAction" destination="VTf-f3-3z5" id="2vp-dh-Bgo"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
@@ -31,7 +32,7 @@
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <connections>
-                            <action selector="textField:" target="-2" id="oKh-P5-K1N"/>
+                            <action selector="textFieldAction:" target="-2" id="O8r-Q7-ivw"/>
                         </connections>
                     </textField>
                 </subviews>
