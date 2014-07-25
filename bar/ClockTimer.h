@@ -12,7 +12,7 @@
 
 @property (weak) NSTimer *repeatingTimer;
 @property NSObject* barObject;
-@property (nonatomic) SEL updateTextSelector;
-- (IBAction)startRepeatingTimer:sender;
-
+@property SEL updateTextSelector;
+- (void)startRepeatingTimer;
+- (void) testMethod;
 @end

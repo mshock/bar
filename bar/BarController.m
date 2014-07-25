@@ -9,9 +9,6 @@
 #import "BarController.h"
 #import "ClockTimer.h"
 
-@interface BarController ()
-
-@end
 
 @implementation BarController
 
@@ -24,9 +21,11 @@
 }
 // method for timer selector
 - (void) timerWriteText:(NSTimer*)theTimer {
-    NSString *message = [theTimer.userInfo message];
-    [self.textField setStringValue:message];
-    NSLog(@"%@", message);
+    NSDate *date = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"MM/dd/YY HH:mm"];
+    NSString *dateTime = [dateFormatter stringFromDate:date];
+    [self.textField setStringValue:dateTime];
 }
 
 - (id)init
@@ -54,17 +53,21 @@
     // retrieve screen size, set bar size
     NSRect screenDims = [[NSScreen mainScreen] frame];
     //NSLog(@"%f x %f", screenDims.size.height, screenDims.size.width);
-    NSRect barFrame = CGRectMake(0.0, screenDims.size.height-25, screenDims.size.width, 25);
+    NSRect barFrame = CGRectMake(0.0, screenDims.size.height-20, screenDims.size.width, 20);
     [self.barWindow setFrame:barFrame display:YES];
     
     self.textField.bezeled = NO;
     self.textField.editable = NO;
     self.textField.drawsBackground = NO;
     
+    self.clockTimer = [[ClockTimer alloc] init];
+    
     self.clockTimer.barObject = self;
     
     self.clockTimer.updateTextSelector = @selector(timerWriteText:);
-    [self.clockTimer startRepeatingTimer:self];
+    [self.clockTimer startRepeatingTimer];
+    NSLog(@"barcontroller");
+    [self.clockTimer testMethod];
 }
 
 @end
