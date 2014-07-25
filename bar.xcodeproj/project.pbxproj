@@ -20,6 +20,7 @@
 		61793D6219808CBA0028EF95 /* barTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 61793D6119808CBA0028EF95 /* barTests.m */; };
 		61793D71198164960028EF95 /* Bar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61793D70198164960028EF95 /* Bar.xib */; };
 		61793D74198166D30028EF95 /* BarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61793D73198166D30028EF95 /* BarController.m */; };
+		61793D771981BEFC0028EF95 /* ClockTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 61793D761981BEFC0028EF95 /* ClockTimer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		61793D70198164960028EF95 /* Bar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Bar.xib; sourceTree = "<group>"; };
 		61793D72198166D30028EF95 /* BarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarController.h; sourceTree = "<group>"; };
 		61793D73198166D30028EF95 /* BarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarController.m; sourceTree = "<group>"; };
+		61793D751981BEFC0028EF95 /* ClockTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockTimer.h; sourceTree = "<group>"; };
+		61793D761981BEFC0028EF95 /* ClockTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockTimer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,8 @@
 				61793D4A19808CBA0028EF95 /* AppDelegate.m */,
 				61793D72198166D30028EF95 /* BarController.h */,
 				61793D73198166D30028EF95 /* BarController.m */,
+				61793D751981BEFC0028EF95 /* ClockTimer.h */,
+				61793D761981BEFC0028EF95 /* ClockTimer.m */,
 				61793D4C19808CBA0028EF95 /* MainMenu.xib */,
 				61793D4F19808CBA0028EF95 /* Images.xcassets */,
 				61793D3E19808CBA0028EF95 /* Supporting Files */,
@@ -261,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61793D771981BEFC0028EF95 /* ClockTimer.m in Sources */,
 				61793D4B19808CBA0028EF95 /* AppDelegate.m in Sources */,
 				61793D4419808CBA0028EF95 /* main.m in Sources */,
 				61793D74198166D30028EF95 /* BarController.m in Sources */,

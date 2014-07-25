@@ -8,6 +8,7 @@
             <connections>
                 <outlet property="barView" destination="EiT-Mj-1SZ" id="cPe-Fd-nSz"/>
                 <outlet property="barWindow" destination="QvC-M9-y7g" id="6Ty-4c-lFV"/>
+                <outlet property="textField" destination="VTf-f3-3z5" id="dMK-at-Ijk"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
@@ -20,6 +21,20 @@
             <view key="contentView" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VTf-f3-3z5">
+                        <rect key="frame" x="0.0" y="248" width="204" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="JL4-7s-m7L">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <action selector="textField:" target="-2" id="oKh-P5-K1N"/>
+                        </connections>
+                    </textField>
+                </subviews>
             </view>
         </window>
     </objects>

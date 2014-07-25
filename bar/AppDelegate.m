@@ -28,6 +28,7 @@
 {
     self.barController = [[BarController alloc] init];
     [self.barController showWindow: nil];
+    [self.barController writeText:@"testing!"];
     
 }
 

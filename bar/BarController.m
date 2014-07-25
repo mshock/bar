@@ -7,6 +7,7 @@
 //
 
 #import "BarController.h"
+#import "ClockTimer.h"
 
 @interface BarController ()
 
@@ -15,15 +16,19 @@
 @implementation BarController
 
 - (void) writeText:(NSString *)message {
-    
+    [self.textField setStringValue:message];
+}
+
+// method for timer selector
+- (void) timerWriteText:(NSTimer*)theTimer {
+    NSString *message = [theTimer.userInfo message];
+    [self.textField setStringValue:message];
 }
 
 - (id)init
 {
     self = [super initWithWindowNibName:@"Bar"];
     if (self) {
-//        [self loadWindow];
-        [self barWindow];
     }
     return self;
 }
@@ -48,6 +53,14 @@
     NSRect barFrame = CGRectMake(0.0, screenDims.size.height-25, screenDims.size.width, 25);
     [self.barWindow setFrame:barFrame display:YES];
     
+    self.textField.bezeled = NO;
+    self.textField.editable = NO;
+    self.textField.drawsBackground = NO;
+    
+    self.clockTimer.barObject = self;
+    
+    self.clockTimer.updateTextSelector = @selector(timerWriteText:);
+    [self.clockTimer startRepeatingTimer:nil];
 }
 
 @end
