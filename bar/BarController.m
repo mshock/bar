@@ -36,6 +36,11 @@
     return self;
 }
 
+- (void) activeSpaceDidChange:(NSNotification *)aNotification {
+    
+        NSLog(@"space changed");
+}
+
 - (void)windowDidLoad
 {
     [super windowDidLoad];
@@ -68,6 +73,8 @@
     [self.clockTimer startRepeatingTimer];
     NSLog(@"barcontroller");
     [self.clockTimer testMethod];
+    
+    [[[NSWorkspace sharedWorkspace] notificationCenter] addObserver:self selector:@selector(activeSpaceDidChange:) name:NSWorkspaceActiveSpaceDidChangeNotification object:nil];
 }
 
 @end

@@ -24,11 +24,14 @@
     self.statusBar.highlightMode = YES;
 }
 
+
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     self.barController = [[BarController alloc] init];
     [self.barController showWindow: nil];
     [self.barController writeText:@"testing!"];
+     
 }
 
 @end
